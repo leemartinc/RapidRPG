@@ -73,18 +73,19 @@ render(){
               Monw : { position: Constants.MONW_POS, size: Constants.CELL_SIZE, renderer: <Monster /> },
               win : { position: Constants.WIN_POS, size: Constants.CELL_SIZE, renderer: <Prize /> },
 
-              Top_Wall : { position: [0,0] , size_width: Constants.CELL_SIZE * 40, size_height: Constants.CELL_SIZE , renderer: <Vertical_Wall /> },
-              Bottom_Wall : { position: [0,39] , size_width: Constants.CELL_SIZE * 40, size_height: Constants.CELL_SIZE , renderer: <Vertical_Wall /> },
-              Left_Wall : { position: [0,0] , size_width: Constants.CELL_SIZE, size_height: Constants.CELL_SIZE * 40, renderer: <Horizontal_Wall /> },
-              Right_Wall : { position: [39,0] , size_width: Constants.CELL_SIZE, size_height: Constants.CELL_SIZE * 40, renderer: <Horizontal_Wall /> },
+              //Top_Wall : { position: [0,0] , size_width: Constants.CELL_SIZE * 40, size_height: Constants.CELL_SIZE , renderer: <Vertical_Wall /> },
+              //Bottom_Wall : { position: [0,39] , size_width: Constants.CELL_SIZE * 40, size_height: Constants.CELL_SIZE , renderer: <Vertical_Wall /> },
+              //Left_Wall : { position: [0,0] , size_width: Constants.CELL_SIZE, size_height: Constants.CELL_SIZE * 40, renderer: <Horizontal_Wall /> },
+              //Right_Wall : { position: [39,0] , size_width: Constants.CELL_SIZE, size_height: Constants.CELL_SIZE * 40, renderer: <Horizontal_Wall /> },
 
-              wall: { position: [0,4] , size_width: Constants.CELL_SIZE, size_height: Constants.CELL_SIZE * 40, renderer: <Horizontal_Wall /> },
+              //wall: { position: [0,4] , size_width: Constants.CELL_SIZE, size_height: Constants.CELL_SIZE * 40, renderer: <Horizontal_Wall /> },
 
 
             }}
             systems = {[ GameLoop ]}
             onEvent = {this.onEvent}
             running = {this.state.running}
+            
             >
               <StatusBar hidden={true} />
       

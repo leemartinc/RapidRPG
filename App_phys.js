@@ -52,7 +52,12 @@ export default class rapidRPG extends Component{
 
   setupWorld = () => {
     let engine = Matter.Engine.create({enableSleeping: false});
+    //Matter.Engine.update(engine,1000,1);
     let world = engine.world;
+    //Runner.run(runner, engine);
+
+    //engine.timing.timeScale = .5;
+    //Matter.Engine.update(engine,1000);
     world.gravity.y = 0;
     //world.setBounds = {min:{x:0,y:0},max:{x:310,y:310}};
 
@@ -76,6 +81,8 @@ export default class rapidRPG extends Component{
     let Mon9 = Matter.Bodies.rectangle(Constants.MON9_POS[0],Constants.MON9_POS[1] , 1,1, {isStatic: true});
     let Monw = Matter.Bodies.rectangle(Constants.MONW_POS[0],Constants.MONW_POS[1] , 1,1, {isStatic: true});
     let Win = Matter.Bodies.rectangle(Constants.WIN_POS[0],Constants.WIN_POS[1] , 1,1, {isStatic: true});
+
+    let wall1 = Matter.Bodies.rectangle(-1, 20, 1,41, {isStatic: true});
 
     Matter.World.add(world, [character, 
       BorderWallTop,

@@ -33,7 +33,7 @@ function setStats(){
   switch(Global.PLAYER_CLASS) {
  
     case 'Ninja':
-      this.ONE();
+      //this.ONE();
       break;
     
     case 'Warrior':
@@ -47,11 +47,11 @@ function setStats(){
       break;
 
     case 'Knight':
-      this.THREE();
+      //this.THREE();
       break;
 
     case 'Preist':
-      this.FOUR();
+      //this.FOUR();
       break;
 
     }
@@ -122,7 +122,7 @@ class WelcomeScreen extends Component{
       </View>
 
       <Button
-        title="Go to Details"
+        title="Start Game"
         onPress={() => this.ready()}
       />
     </View>
